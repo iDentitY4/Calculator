@@ -12,6 +12,10 @@ struct CalculatorBrain {
     
     private var accumulator: Double?
     
+    private var resultIsPending: Bool
+    
+    private var description: String
+    
     private enum Operation {
         case constant(Double)
         case unaryOperation((Double) -> Double)
@@ -83,9 +87,11 @@ struct CalculatorBrain {
         
     }
     
-    func evaluate(using variables: Dictionary<String, Double>? = nil) -> (result: Double?, isPending: Bool, description: String) {
+    func description
+    
+    /*func evaluate(using variables: Dictionary<String, Double>? = nil) -> (result: Double?, isPending: Bool, description: String) {
         
-    }
+    }*/
     
     var result: Double? {
         get {
